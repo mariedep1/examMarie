@@ -20,8 +20,8 @@ require_once "delete.php";
 
 
 //on récupère toutes les courses 
-if($isLoggedIn){
-$courses = findAllCourses(); 
+if($isLoggedIn ){
+$courses = findAllCourses($_SESSION['userId']); 
 }
 
 //supprimer une course
