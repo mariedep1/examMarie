@@ -38,7 +38,7 @@ if( isset($_POST['idASupprimer']) && $_POST['idASupprimer']!=""){
 
 if(isset($_POST['descriptionCourse']) && $_POST['descriptionCourse']!=""){
     $descriptionCourse = htmlspecialchars($_POST['descriptionCourse']);
-    createCourse($descriptionCourse); 
+    createCourse($descriptionCourse, $_SESSION['userId']); 
 }
 
 //modifier une course 
